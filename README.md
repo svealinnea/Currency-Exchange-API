@@ -20,6 +20,7 @@ Here are some instructions on how to do so:
 5. You can type npm install into the terminal to get npm to install
 6. Then you will want to type npm run start and it will open a live server. From there you can see the website in your browser.
 
+## API Key Information 
 You will need to also create an API Key in order for this application to work. We used the API key found on https://app.exchangerate-api.co after we created an account. Once you create an account you can access your API key under dashhboard. After you get your API key you can either paste the API key directly in to the code in main.js OR you will want to create a .env file.
 
 How to create a .env file
