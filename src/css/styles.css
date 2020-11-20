@@ -1,20 +1,18 @@
 body {
-  background-color: aqua;
+  background-color: #B9B7BD;
 }
 .question {
   text-align: center;
 }
 
 #input {
-  margin-right: 100%;
+  width: 375px;
+  height: 25px;
 }
 
 .button {
   background-color: white;
   color: black;
-}
-form{
-  background-color: rgba(128, 128, 128, 0.548);
 }
 h1 {
   text-align: center;
@@ -22,5 +20,30 @@ h1 {
 }
 #error {
   display: none;
+  text-align: center;
+}
+#selector { 
+  width: 375px;
+  height: 25px;
+}
+form {
+  background-color: #E7D2CC
+}
+#spain {
+  text-align: center;
+}
+#australia {
+  text-align: center;
+}
+#china {
+  text-align: center;
+}
+#uk {
+  text-align: center;
+}
+#nz {
+  text-align: center;
+}
+#mexico {
   text-align: center;
 }
