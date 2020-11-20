@@ -25,10 +25,10 @@ $('form#currency').submit(function() {
         $("#nz").append(`Your conversion is $ ${main.conversion_rates.NZD * dollars}`)
       } else if (value == 6) {
         $("#mexico").append(`Your conversion is $ ${main.conversion_rates.MXN * dollars}`)
-      } else if (value === 0) {
-        $("#error").show();
       } else {
-        $('.showErrors').text(`There was an error processing your request:`);
+        $("#error").show();
       }
+    }, function(error) {
+      $('.showErrors').text(`There was an error processing your request: ${error}`);
     });
   });
