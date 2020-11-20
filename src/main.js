@@ -15,6 +15,8 @@ import CurrencyAPI from './currency.js';
       console.log(main);
       let spain = main.conversion_rates.EUR * dollars
       let australia = main.conversion_rates.AUD * dollars
+      let china = main.conversion_rates.CNY * dollars
+      console.log(china)
       console.log(australia);
       console.log(spain);
     })
