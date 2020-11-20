@@ -11,6 +11,7 @@
         <input type="number" placeholder="$100" id="input" required>
         <p>Where would you like to travel?</p>
         <select class="form-control" id="currency">
+          <option value=0></option>
           <option value=1>Spain</option>
           <option value=2>Australia</option>
           <option value=3>China</option>
@@ -19,7 +20,7 @@
           <option value=6>Mexico</option>
         </select>
         <div class="center">
-          <button class="button" type="button" id="submit">Submit</button>
+          <button class="button" type="submit" id="submit">Submit</button>
         </div>
         <div id="spain"></div>
         <div id="australia"></div>
@@ -27,6 +28,7 @@
         <div id="uk"></div>
         <div id="nz"></div>
         <div id="mexico"></div>
+        <div id="error">That is not one of the currencie's offered</div>
     </form>
   </div>
 </body>
