@@ -13,26 +13,22 @@ $('form#currency').submit(function() {
     const main = JSON.parse(response);
     let value = $("select#currency").val();
     console.log(value);
-    let spain = main.conversion_rates.EUR * dollars;
-    let australia = main.conversion_rates.AUD * dollars;
-    let china = main.conversion_rates.CNY * dollars;
-    let england = main.conversion_rates.GBP * dollars;
-    let nz = main.conversion_rates.NZD * dollars;
-    let mexico = main.conversion_rates.MXN * dollars;
       if (value == 1) {
-        $("#spain").append("Your conversion is " + "€" + spain);
+        $("#spain").append(`Your conversion is € ${main.conversion_rates.EUR * dollars}`);
       } else if (value == 2) {
-        $('#australia').append("Your conversion is " + "$" + australia );
+        $('#australia').append(`Your conversion is $ ${main.conversion_rates.AUD * dollars}`);
       } else if (value == 3) {
-        $("#china").append("Your conversion is " + "¥" + china);
+        $("#china").append(`Your conversion is ¥ ${main.conversion_rates.CNY * dollars}`);
       } else if (value == 4) {
-        $("#uk").append("Your conversion is " + "£" + england);
+        $("#uk").append(`Your conversion is £ ${main.conversion_rates.GBP * dollars}`);
       } else if (value == 5) {
-        $("#nz").append("Your conversion is " + "$" + nz)
+        $("#nz").append(`Your conversion is $ ${main.conversion_rates.NZD * dollars}`)
       } else if (value == 6) {
-        $("#mexico").append("Your conversion is " + "$" + mexico)
-      } else {
+        $("#mexico").append(`Your conversion is $ ${main.conversion_rates.MXN * dollars}`)
+      } else if (value === 0) {
         $("#error").show();
+      } else {
+        $('.showErrors').text(`There was an error processing your request:`);
       }
-      });
+    });
   });
