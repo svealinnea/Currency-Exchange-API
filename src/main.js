@@ -14,6 +14,8 @@ import CurrencyAPI from './currency.js';
       const main = JSON.parse(response);
       console.log(main);
       let spain = main.conversion_rates.EUR * dollars
+      let australia = main.conversion_rates.AUD * dollars
+      console.log(australia);
       console.log(spain);
     })
   });
